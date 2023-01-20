@@ -30,6 +30,43 @@ Exposure to these particulates has been found to lead to negative cardiovascular
 # Summary
 
 We chose to evaluate the effects toxic air pollution on three health outcomes, mortality, low birth weight and cancer incidence. 
+We chose to evaluate the effects of toxic air pollution on three health outcomes, mortality, low birth weight and cancer incidence.
+
+### Mortality
+
+Our analysis of the related effects of air pollution on mortality led us to the California Department of Health were we sourced aggregated mortality tables for all 58 California counties for a time scale spanning from 1999-2021. We focused our analysis on the top-ten most polluted CA counties, measured by the highest annual median AQI, and sourced morality statistics for heart disease, respiratory disease, and cancer. 
+
+Using a Granger Causality hypothesis test, we determined that statistically significant relationships existed between toxic air pollution and counts of death from the four chosen causes of death in Imperial, Kern, Los Angeles, Riverside, San Bernardino, San Diego, and Tulare counties. In an effort to quantify the effect of the different monitored pollutants, a Poisson Regression model was selected to model counts of death per the four categories against days with elevated levels of fine air particulate (PM 2.5) and days with "good" air quality as assessed by Median AQI. 
+
+The results showed marginal success but also much noise. We found that:
+
+1. Kern County shows a statistically significant relationship between days with high levels of PM 2.5 and deaths from cancer, heart disease and respiratory illnesses. 
+
+2. Los Angeles County shows a statistically significant relationship between days with high levels of PM 2.5 and deaths from cancer. 
+
+3. Tulare County shows a statistically significant relationship between days with high levels of PM 2.5 and deaths from cancer. 
+
+4. San Diego shows a statistically significant relationship between days with high levels of PM 2.5 and deaths from chronic lower respiratory disease. 
+
+In all of the above models the regression coefficients indicated a negative relationship between good air quality days and a positive relationship between days with elevated levels of fine particulate matter, with p-values less than $.05$ for all coefficients. 
+
+
+### Low Birthrate Data & its Relationship with Air quality  
+We conducted an analysis of the relationship between air quality and low birthweight in California. The data was collected from 2010 to 2022 and included county level information. Our initial analysis used a linear regression model with the air quality independent variables mentioned earlier in this summary.
+
+However, due to the large number of variables and the presence of multicollinearity, we decided to perform a Lasso regression using LassoCV.
+
+Our final model included the following independent variables:
+
+1. 'good days'
+2. 'max aqi'
+3. '90th percentile aqi'
+4. 'days ozone'
+5. 'days pm10'
+
+We found that 'good days' had a negative relationship with low birthweight as measured by a negative coefficient, while 'max aqi', '90th percentile aqi', and 'days ozone' had positive coefficients. 'Days pm10' had a strong negative coefficient, which may be explained removing the other contaminants from the original first model. 
+
+The R-squared of the regression was 54.3%, and consequentially we chose to focus our resourses on the other more successful datasets for which we had promising modelling efforts.
 
 INSERT MORE
 
