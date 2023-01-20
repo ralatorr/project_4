@@ -29,7 +29,7 @@ Exposure to these particulates has been found to lead to negative cardiovascular
 
 # Summary
 
-We chose to evaluate the effects toxic air pollution on three health outcomes, mortality, low birth weight and cancer incidence.
+We chose to evaluate the effects of toxic air pollution on three health outcomes, mortality, low birth weight and cancer incidence.
 
 **Mortality**
 
