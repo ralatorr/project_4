@@ -29,7 +29,26 @@ Exposure to these particulates has been found to lead to negative cardiovascular
 
 # Summary
 
-We chose to evaluate the effects toxic air pollution on three health outcomes, mortality, low birth weight and cancer incidence. 
+We chose to evaluate the effects toxic air pollution on three health outcomes, mortality, low birth weight and cancer incidence.
+
+**Mortality**
+
+Our analysis of the related effects of air pollution on mortality led us to the California Department of Health were we sourced aggregated mortality tables for all 58 California counties for a time scale spanning from 1999-2021. We focused our analysis on the top-ten most polluted CA counties, measured by the highest annual median AQI, and sourced morality statistics for heart disease, respiratory disease, and cancer. 
+
+Using a Granger Causality hypothesis test, we determined that statistically significant relationships existed between toxic air pollution and counts of death from the four chosen causes of death in Imperial, Kern, Los Angeles, Riverside, San Bernardino, San Diego, and Tulare counties. In an effort to quantify the effect of the different monitored pollutants, a Poisson Regression model was selected to model counts of death per the four categories against days with elevated levels of fine air particulate (PM 2.5) and days with "good" air quality as assessed by Median AQI. 
+
+The results showed marginal success but also much noise. We found that:
+
+1. Kern County shows a statistically significant relationship between days with high levels of PM 2.5 and deaths from cancer, heart disease and respiratory illnesses. 
+
+2. Los Angeles County shows a statistically significant relationship between days with high levels of PM 2.5 and deaths from cancer. 
+
+3. Tulare County shows a statistically significant relationship between days with high levels of PM 2.5 and deaths from cancer. 
+
+4. San Diego shows a statistically significant relationship between days with high levels of PM 2.5 and deaths from chronic lower respiratory disease. 
+
+In all of the above models the regression coefficients indicated a negative relationship between good air quality days and a positive relationship between days with elevated levels of fine particulate matter, with p-values less than $.05$ for all coefficients. 
+
 
 INSERT MORE
 
