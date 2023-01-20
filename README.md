@@ -31,7 +31,7 @@ Exposure to these particulates has been found to lead to negative cardiovascular
 
 We chose to evaluate the effects of toxic air pollution on three health outcomes, mortality, low birth weight and cancer incidence.
 
-**Mortality**
+### Mortality
 
 Our analysis of the related effects of air pollution on mortality led us to the California Department of Health were we sourced aggregated mortality tables for all 58 California counties for a time scale spanning from 1999-2021. We focused our analysis on the top-ten most polluted CA counties, measured by the highest annual median AQI, and sourced morality statistics for heart disease, respiratory disease, and cancer. 
 
