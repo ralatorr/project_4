@@ -29,6 +29,7 @@ Exposure to these particulates has been found to lead to negative cardiovascular
 
 # Summary
 
+We chose to evaluate the effects toxic air pollution on three health outcomes, mortality, low birth weight and cancer incidence. 
 We chose to evaluate the effects of toxic air pollution on three health outcomes, mortality, low birth weight and cancer incidence.
 
 ### Mortality
@@ -50,20 +51,22 @@ The results showed marginal success but also much noise. We found that:
 In all of the above models the regression coefficients indicated a negative relationship between good air quality days and a positive relationship between days with elevated levels of fine particulate matter, with p-values less than $.05$ for all coefficients. 
 
 
--- JACK PORTION
-We conducted an analysis of the relationship between air quality and low birthweight in California. The data was collected from 2010 to 2021 and included county level information. Our initial analysis used a linear regression model with the air quality independent variables mentioned earlier in this summary.
+### Low Birthrate Data & its Relationship with Air quality  
+We conducted an analysis of the relationship between air quality and low birthweight in California. The data was collected from 2010 to 2022 and included county level information. Our initial analysis used a linear regression model with the air quality independent variables mentioned earlier in this summary.
 
 However, due to the large number of variables and the presence of multicollinearity, we decided to perform a Lasso regression using LassoCV.
 
 Our final model included the following independent variables:
 
-'good days'
-'max aqi'
-'90th percentile aqi'
-'days ozone'
-'days pm10'
+1. 'good days'
+2. 'max aqi'
+3. '90th percentile aqi'
+4. 'days ozone'
+5. 'days pm10'
 
-We found that 'good days' had a negative relationship with low birthweight as measured by a negative coefficient, while 'max aqi', '90th percentile aqi', and 'days ozone' had positive coefficients. 'Days pm10' had a strong negative coefficient, which may be explained removing the other contaminants from the original first model. The R-squared of the regression was 54.3%, and thus we focused our resourses on the other more successful datasets.
+We found that 'good days' had a negative relationship with low birthweight as measured by a negative coefficient, while 'max aqi', '90th percentile aqi', and 'days ozone' had positive coefficients. 'Days pm10' had a strong negative coefficient, which may be explained removing the other contaminants from the original first model. 
+
+The R-squared of the regression was 54.3%, and consequentially we chose to focus our resourses on the other more successful datasets for which we had promising modelling efforts.
 
 INSERT MORE
 
